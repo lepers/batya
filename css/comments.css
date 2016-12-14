@@ -1,0 +1,71 @@
+/* Removing awful "dot" feature for comments! */
+.c_show_user {
+	display: none!important;
+}
+
+.comment .originalposter {
+	color: #1B8F2C!important;
+}
+
+.comment .ddi .c_icon {
+	position: relative;
+	bottom: 1px;
+}
+
+.comment .ddi .c_answer {
+    margin-right: 1px!important;
+}
+
+.comment .ddi .c_parent {
+	margin-left: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.comment .ddi .c_previous {
+	margin-left: 5px;
+}
+
+.comment .ddi .c_fold {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.2em;
+	line-height: 1.25em;
+	font-weight: 600;
+	color: #666;
+	background-color: #eee;
+
+	width: 16px!important;
+	height: 16px!important;
+	margin-right: 3px;
+	margin-top: -2px!important;
+	cursor: pointer;
+}
+
+.comment .ddi .c_fold:hover {
+	color: #000;
+}
+
+.comment .vote_result {
+	top: 24px!important;
+}
+
+.comment .vote_result.positive {
+	color: #FF8B60!important;
+	font-weight: 300;
+}
+
+.comment .vote_result.negative {
+	color: #9A94FF!important;
+	font-weight: 300;
+}
+
+.comment .ddi .b-icon_button_close {
+    margin-left: -7px!important;
+}
+
+.comment .ddi .b-svg-icon__share_comment {
+    margin-left: 2px!important;
+}

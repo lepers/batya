@@ -1,0 +1,52 @@
+{
+    "name": "Лепробатя",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Немного улучшает этот ваш Лепрозорий, так-то!",
+    "homepage_url": "https://github.com/lepers/batya",
+
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+
+    "permissions": [
+        "https://*.leprosorium.ru/*"
+    ],
+
+    "web_accessible_resources": [
+        "img/*.png"
+    ],
+
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://*.leprosorium.ru/*"
+            ],
+            "css": [
+                "css/global.css"
+            ],
+            "js" : [
+                "js/injectable.js"
+            ]
+        },
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://*.leprosorium.ru/comments/*",
+                "https://leprosorium.ru/my/inbox/*",
+                "https://leprosorium.ru/users/*/comments"
+            ],
+            "css": [
+                "css/comments.css"
+            ],
+            "js": [
+                "js/jquery.js",
+                "js/comments.js",
+                "js/comma-colon.js"
+            ]
+        }
+    ]
+}

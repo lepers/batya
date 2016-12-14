@@ -1,0 +1,26 @@
+/* Vertical centering for search button */
+.b-icon_button_search {
+	bottom: 2px!important;
+}
+
+/* Tweaking a sublepro settings button */
+#js-subdomain_settings_button {
+	width: 24px;
+	height: 24px;
+	right: 28px;
+	top: 45px;
+	background: url("chrome-extension://__MSG_@@extension_id__/img/subdomain-preferences.png");
+	border-radius: 6px;
+}
+
+/* Tweaking a pixel-shift for reply icon in toolbars */
+.ddi .post_icon {
+	margin-right: 2px!important;
+	position: relative;
+	bottom: 1px;
+}
+
+/* Close button must be redish */
+.b-icon_button_close:hover {
+	color: #c00!important;
+}

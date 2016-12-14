@@ -1,0 +1,5 @@
+function comma_to_colon() {
+    eval('window.commentForm.prototype.show = function(e){this.container.set("styles",{overflow:"hidden",maxHeight:0}),this.container.removeClass("hidden"),this.container.get("morph").removeEvents("complete"),this.container.set("morph",{duration:222,onComplete:function(){this.visible=!0,this.container.set("styles",{overflow:""}),this.uploader&&"ie"==Browser.name&&this.deleteFile()}.bind(this)}),this.container.morph({maxHeight:1e3}),this.container.getElement("textarea").addEvent("focus",function(){keypress.stop_listening()}),this.container.getElement("textarea").addEvent("blur",function(){keypress.listen()}),this.container.getElement("textarea").value=this.container.getElement("textarea").value,this.options.focus_on_show&&!e&&(/\bMSIE 6/.test(navigator.userAgent)&&!window.opera||this.container.getElement("textarea").focus(),0==this.container.getElement("textarea").value.trim().length&&(this.container.getElement("textarea").value=this.options.comment_user_name?this.options.comment_user_name+": ":""))}');
+};
+
+inject(comma_to_colon);
